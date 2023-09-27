@@ -9,6 +9,11 @@
       border: 1px solid rgb(244, 32, 32);
       
     }
+nav{
+  background-color: #333;
+  overflow: hidden;
+}
+
     </style>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -18,7 +23,25 @@
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </head>
 <body>
+    <header>
 <h1>Visit cities with Hari Chaithanya</h1>
+</header>
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand" href="cities.html">A Few Cities</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <ul class="navbar-nav mr-auto">
+      <li class="nav-link">
+        <a class="nav-link active" aria-current="page" href="basic.html">Basic</a>
+      </li>
+      <li class="nav-link">
+        <a class="nav-link active" aria-current="page" href="advanced.html">Advanced</a>
+      </li>
+   </ul>
+  </div>
+</nav>
 <div class="container">
     <div class="row">
         <div class="col-sm-2">K</div>
@@ -37,7 +60,7 @@
         <div class="col-md">ABU DHABI</div>
     </div>
 </div>
-<br>
+
 <p>The row of city names are breaking first when reducing the size beacause the letters occupy less space than thye city names which causes them wrap them earlier.</p>
 
 <div class="container">
@@ -72,9 +95,10 @@
 </div>
 <br>
 <div class="container">
-  <table class="table">
+  <table class="table table-bordered table-hover table-striped-columns">
+    
       <caption>Table Containing Letters ,Cities,Rivers and Trees</caption>
-      <thead>
+      <thead class="table-dark">
           <tr>
               <th scope="col">LETTER</th>
               <th scope="col">CITY</th>
@@ -122,14 +146,14 @@
       </tbody>
   </table>
 </div>
-<br>
+
 
 <div class="container">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <span class="navbar-brand">Buttons and Button Groups</span>
   </nav>
 
-  <div class="btn-toolbar" role="toolbar">
+  <div class="btn-toolbar " role="toolbar">
       <div class="btn-group mr-2" role="group">
           <span class="btn btn-success">K</span>
           <span class="btn btn-success">O</span>
@@ -146,13 +170,17 @@
       </div>
   </div>
 </div>
-<div class="Dropdown">
+<div class="Dropdown" style="text-align: center;">
   <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="true" style="size: 120px; color: rgb(7, 84, 237); background-color: rgb(224, 188, 243); font-family: fantasy;"><h4>Dropdown Menu</h4></button>
   <ul class="dropdown-menu">
     <li><a class="dropdown-item" href="basic.html" style="background-color: rgb(13, 245, 168);">Basic Html</a></li>
     <li><a class="dropdown-item" href="advanced.html" style="background-color: rgb(250, 82, 82);">Adavanced Html</a></li>
   </ul>
 </div>
+<br>
+<br>
+
+<div class="container">
 <form>
     <div class="form-group">
       <label for="EmailLogin">Email address</label>
@@ -169,6 +197,7 @@
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
+</div>
 </body>
 
 
